@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>123Reservas</title>
+  </head>
+  <body>
+    <h1>Bem vindo à 123Reservas</h1>
+
+    <h2>Faça sua reserva conosco!</h2>
+
+    <form action="get" method="">
+      <fieldset>
+        <legend>Seus dados</legend>
+        <label>Nome</label><br>
+        <input type="text" required name="nome"></form><br><br>
+
+        <label>E-mail</label><br>
+        <input type="email" required name="email"><br><br>
+      </fieldset>
+      
+      <fieldset>
+        <legend>Quais serviços deseja incluir?</legend>
+        <label>
+          <br><input type="checkbox" name="passagens" value="Passagens">Compra de passagens
+        </label>
+        <label>
+          <br><input type="checkbox" name="hospedagem" value="Hospedagem">Reserva de hospedagem
+        </label>
+        <label>
+          <br><input type="checkbox" name="aluguelVeiculos" value="Veículo">Aluguel de veículo
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Escolha a forma de pagamento:</legend>
+        <label>
+          <br><input type="radio" name="formaPagamento" value="Cartão de crédito">Cartão de crédito
+        </label>
+        <label>
+          <br><input type="radio" name="formaPagamento" value="Cartão de débito">Cartão de débito
+        </label>
+        <label>
+          <br><input type="radio" name="formaPagamento" value="Boleto">Boleto
+        </label>
+        <label>
+          <br><input type="radio" name="formaPagamento" value="Pix">Pix
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Escolha o prazo para pagamento</legend>
+        <select name="prazoPagamento">
+          <option value="aVista">À vista</option>
+          <option value="5x" selected>5x Sem juros</option>
+          <option value="10x">10x Com juros</option>
+        </select>
+      </fieldset>
+      <br>
+      <input type="submit" name="Salvar">
+    </form>
+  </body>
+</html>
